@@ -1,0 +1,58 @@
+VDR.bundle
+==========
+
+This is a Plex plugin to properly scan VDR recordings.
+
+Installation
+------------
+
+* Clone this repository into ".../Plex Media Server/Plug-ins/"
+* Symlink/move "Resources/Movies/VDR Recordings Scanner.py" to ".../Plex Media Server/Scanners/Movies/"
+
+Usage
+-----
+
+Afer restarting Plex you should see both a new "Scanner" and a new "Agent" under
+"Advanced Options" when adding a new Library.
+
+Usage scenarios:
+
+1. "VDR Recordings Scanner" + "VDR Recordings Importer" as Agent
+
+One video will be added to the library for each VDR recording.
+Metadata will be extracted from the data VDR stored with the recording.
+
+This is most useful if most of your recordings are unlikely to get matches at online movie databases.
+
+2. "VDR Recordings Scanner" + default Plex Agent
+
+One video will be added to the library for each VDR recording.
+The primary video title will be used to scrape metadata from online databases.
+
+Limitations
+-----------
+
+* Will only work with the newer ".ts" VDR recordings
+
+TODO
+----
+
+* VDR recordings of TV series are recognized as movies.
+* Sometimes Plex gets very slow or stalls when using either this agent or scanner.
+
+Authors
+-------
+
+* Dariush Forouher
+* buescher
+
+Links
+-----
+
+* http://www.tvdr.de
+* http://www.plexapp.com
+
+License
+-------
+
+This code is published under the BSD license.
