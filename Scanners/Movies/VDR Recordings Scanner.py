@@ -3,7 +3,7 @@
 # Source:
 # https://forums.plexapp.com/index.php/topic/86990-scanner-for-vdr-recordings/
 #
-# Copyright: buescher 2013
+# Copyright: Friedhelm Buescher 2013
 
 import re, os, os.path, sys, datetime
 import Media, VideoFiles, unicodedata, Stack
