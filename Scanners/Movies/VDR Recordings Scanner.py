@@ -25,7 +25,7 @@ def Scan(path, files, mediaList, subdirs):
 
         movie = Media.Movie(title)
 
-        for ts_filename in os.listdir(dir):
+        for ts_filename in sorted(os.listdir(dir)):
           if (ts_filename.endswith(".ts")):
             if (ts_filename.endswith("00001.ts")):
               movie.source = VideoFiles.RetrieveSource(dir+"/"+ts_filename)
