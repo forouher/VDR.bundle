@@ -6,8 +6,13 @@ This is a Plex plugin to properly scan VDR recordings.
 Installation
 ------------
 
-* Clone this repository into ".../Plex Media Server/Plug-ins/"
-* Symlink/move "Resources/Movies/VDR Recordings Scanner.py" to ".../Plex Media Server/Scanners/Movies/"
+* Clone this repository into ".../Plex Media Server/Plug-ins/VDR.bundle".
+* Symlink/move "Scanners/Movies/VDR Recordings Scanner.py" to ".../Plex Media Server/Scanners/Movies/"
+
+The resulting file layout should be:
+
+Plex Media Server/Plug-ins/VDR.bundle/Contents/
+Plex Media Server/Scanners/Movies/VDR Recordings Scanner.py
 
 Usage
 -----
